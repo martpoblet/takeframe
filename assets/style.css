@@ -207,7 +207,7 @@ details p { margin: 10px 0 0; color: var(--muted); }
 .landing .cta .note strong { color: var(--text); font-weight: 700; }
 
 /* The Mac window with the iPhone in front of it, built from the real captures */
-.landing .devices { position: relative; max-width: 1000px; margin: 72px auto 0; padding: 0 0 10% 12%; }
+.landing .devices { position: relative; max-width: 1000px; margin: 72px auto 0; padding: 0 0 8% 10%; }
 .landing .window {
   border-radius: 12px;
   overflow: hidden;
@@ -220,14 +220,14 @@ details p { margin: 10px 0 0; color: var(--muted); }
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 56%;
-  padding: 1.7%;
-  background: #0f0f10;
-  border-radius: 13% / 27%;
-  border: 2px solid #4a4a4e;
+  width: 46%;
+  padding: 1.1%;
+  background: #0b0b0c;
+  border-radius: 10% / 21%;
+  border: 1.5px solid #5a5a5f;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
 }
-.landing .phone img { border-radius: 11% / 24%; }
+.landing .phone img { border-radius: 8.6% / 18.6%; }
 
 /* Spec strip */
 .landing .specs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 72px; padding: 0; list-style: none; }
