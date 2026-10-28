@@ -3,53 +3,322 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Takeframe — Tu iPhone, cámara de estudio</title>
-<meta name="description" content="Tu iPhone como cámara de estudio, controlada desde tu Mac, con el audio de tu micrófono ya sincronizado.">
-<meta property="og:title" content="Takeframe — Tu iPhone, cámara de estudio">
-<meta property="og:description" content="Tu iPhone como cámara de estudio, controlada desde tu Mac, con el audio de tu micrófono ya sincronizado.">
-<meta property="og:image" content="../assets/icono.png">
+<title>Takeframe: tu iPhone como cámara de estudio 4K para tu Mac</title>
+<meta name="description" content="Grabá en 4K, HDR, ProRes y Apple Log con tu iPhone mientras lo encuadrás, enfocás y controlás en vivo desde tu Mac, con el micrófono de la Mac ya sincronizado.">
+<link rel="canonical" href="https://martpoblet.github.io/takeframe/es/">
+<link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/">
+<link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/">
+<link rel="alternate" hreflang="x-default" href="https://martpoblet.github.io/takeframe/">
+<meta name="apple-itunes-app" content="app-id=6824066436">
+<meta name="theme-color" content="#07070a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Takeframe">
+<meta property="og:locale" content="es_LA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://martpoblet.github.io/takeframe/es/">
+<meta property="og:title" content="Takeframe: tu iPhone como cámara de estudio 4K para tu Mac">
+<meta property="og:description" content="Grabá en 4K con tu iPhone mientras lo encuadrás, enfocás y controlás desde tu Mac, con el micrófono de la Mac ya sincronizado.">
+<meta property="og:image" content="https://martpoblet.github.io/takeframe/assets/og-es.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Takeframe en una Mac, con la imagen en vivo de un iPhone adelante">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/satoshi-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Takeframe",
+  "alternateName": "Takeframe – Cámara de estudio remota 4K",
+  "description": "Takeframe convierte tu iPhone en una cámara de estudio que controlás desde tu Mac. El iPhone graba cada toma con la máxima calidad (4K, HDR, ProRes y Apple Log) mientras la Mac muestra un preview en vivo, controla la cámara y graba su propio micrófono, ya sincronizado.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "iOS 17 o posterior, macOS 15 o posterior",
+  "url": "https://martpoblet.github.io/takeframe/es/",
+  "downloadUrl": "https://apps.apple.com/app/id6824066436",
+  "installUrl": "https://apps.apple.com/app/id6824066436",
+  "image": "https://martpoblet.github.io/takeframe/assets/og-es.jpg",
+  "screenshot": [
+    "https://martpoblet.github.io/takeframe/assets/mac-hero.jpg",
+    "https://martpoblet.github.io/takeframe/assets/mac-monitor.jpg",
+    "https://martpoblet.github.io/takeframe/assets/iphone.jpg"
+  ],
+  "inLanguage": ["es", "en"],
+  "author": { "@type": "Person", "name": "Martin Poblet" },
+  "offers": [
+    { "@type": "Offer", "name": "Takeframe", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Takeframe Pro (compra única dentro de la app)", "price": "19.99", "priceCurrency": "USD" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Qué necesito para usar Takeframe?", "acceptedAnswer": { "@type": "Answer", "text": "Un iPhone con iOS 17 o posterior y una Mac con macOS 15 o posterior, con Takeframe abierta en los dos y el Wi-Fi activado. Funciona mejor si están en la misma red. ProRes y Apple Log requieren un iPhone Pro." } },
+    { "@type": "Question", "name": "¿Takeframe es una app de webcam?", "acceptedAnswer": { "@type": "Answer", "text": "No. Takeframe está hecha para grabar: cada toma se graba en el iPhone con la máxima calidad y después se copia a tu Mac. No aparece como cámara en apps de videollamadas ni de streaming." } },
+    { "@type": "Question", "name": "¿Necesito Takeframe Pro?", "acceptedAnswer": { "@type": "Answer", "text": "No. La versión gratis graba en 1080p con foco, exposición y balance de blancos automáticos, e incluye el preview en vivo, la sincronía por sonido, el teleprompter, los marcadores, la cuenta regresiva, la cuadrícula y el nivel. Pro suma 4K, HDR, ProRes y Apple Log, controles manuales, las herramientas del monitor pro y las escenas." } },
+    { "@type": "Question", "name": "¿Takeframe Pro es una suscripción?", "acceptedAnswer": { "@type": "Answer", "text": "No. Takeframe Pro es una compra única que funciona en tu iPhone y en tu Mac con la misma cuenta de Apple. Podés restaurarla cuando quieras desde la pantalla de compra." } },
+    { "@type": "Question", "name": "¿Qué pasa si se corta el Wi-Fi mientras grabo?", "acceptedAnswer": { "@type": "Answer", "text": "La toma se graba en el iPhone, así que sigue: solo se pausa el preview en vivo. Cuando tu Mac se vuelve a conectar, las tomas terminadas se copian." } },
+    { "@type": "Question", "name": "¿Takeframe necesita internet o una cuenta?", "acceptedAnswer": { "@type": "Answer", "text": "No. Tu iPhone y tu Mac se comunican directamente por tu red local, con cifrado de punta a punta. No hay cuentas, ni servidores, ni rastreo." } },
+    { "@type": "Question", "name": "¿Cuánto espacio necesito en el iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Cada toma se graba completa en el iPhone antes de pasar a tu Mac: unos 750 MB por minuto en 4K a 30 fps en HEVC. La app te muestra cuántos minutos te quedan, y cada toma se borra del iPhone cuando ya está a salvo en tu Mac." } },
+    { "@type": "Question", "name": "¿Dónde se guardan mis tomas?", "acceptedAnswer": { "@type": "Answer", "text": "En Películas › Takeframe, en tu Mac: un archivo .mov con el audio ya unido, el .wav original del micrófono y, si agregaste marcadores, un archivo de texto con ellos como capítulos de YouTube." } }
+  ]
+}
+</script>
 </head>
-<body>
+<body class="landing">
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <img class="icon" src="../assets/favicon.png" alt="">
-      <picture>
-        <source srcset="../assets/nombre-blanco.svg" media="(prefers-color-scheme: dark)">
-        <img class="name" src="../assets/nombre-negro.svg" alt="takeframe">
-      </picture>
+      <img class="name" src="../assets/nombre-blanco.svg" alt="Takeframe">
     </a>
     <nav class="nav">
-      <a href="privacidad.html">Privacidad</a>
-      <a href="soporte.html">Soporte</a>
-      <a href="../index.html" lang="en">English</a>
+      <a class="section" href="#como">Cómo funciona</a>
+      <a class="section" href="#pro">Pro</a>
+      <a class="section" href="#preguntas">Preguntas</a>
+      <a href="../" lang="en" hreflang="en">English</a>
+      <a class="get" href="https://apps.apple.com/app/id6824066436">Descargar</a>
     </nav>
   </div>
 </header>
 <main>
-<section class="hero wrap">
-  <img class="app-icon" src="../assets/icono.png" alt="Takeframe">
-  <h1>Tu iPhone, cámara de estudio.<br>Tu Mac, la sala de control.</h1>
-  <p class="lead">Grabá con la mejor calidad de tu iPhone y manejá foco, exposición, color y lente desde la Mac, con el audio de tu micrófono ya sincronizado.</p>
-  <span class="pill"><span class="dot"></span>Próximamente en la App Store · iPhone y Mac</span>
-</section>
-<section class="wrap">
-  <div class="features">
-    <article class="feature"><h3>Calidad máxima</h3><p>La toma se graba entera en el iPhone, en 4K y HDR (ProRes y Apple Log en los modelos Pro), y pasa a tu Mac sin recomprimir.</p></article>
-    <article class="feature"><h3>Control total desde la Mac</h3><p>Lente, zoom, foco manual, ISO, obturación, balance de blancos y linterna. Guardá tus ajustes como escenas y volvé a ellos con un click.</p></article>
-    <article class="feature"><h3>Audio sincronizado</h3><p>El micrófono de tu Mac se une al video ya alineado por sonido, con precisión de milisegundos. Sin aplaudir.</p></article>
-    <article class="feature"><h3>Monitor profesional</h3><p>Preview en vivo casi instantáneo con histograma, cebras, focus peaking, cuadrícula y nivel de horizonte.</p></article>
-    <article class="feature"><h3>Teleprompter</h3><p>Tu guion junto a la cámara. Arranca y se detiene solo con la grabación.</p></article>
-    <article class="feature"><h3>Tu iPhone, liviano</h3><p>Cuando una toma ya está a salvo en la Mac, se borra sola del iPhone para liberar espacio.</p></article>
+
+<section class="hero">
+  <div class="wrap">
+    <img class="app-icon" src="../assets/icono.png" alt="Ícono de Takeframe" width="96" height="96">
+    <h1>Tu iPhone, cámara de estudio.<br>Tu Mac, la sala de control.</h1>
+    <p class="lead">Takeframe graba cada toma en tu iPhone con la máxima calidad (4K, HDR, ProRes y Apple Log) mientras encuadrás, enfocás y ajustás la exposición en vivo desde tu Mac. Cuando cortás, el archivo llega a tu Mac con su micrófono ya sincronizado.</p>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/id6824066436"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-mx?size=250x83" alt="Descárgalo en el App Store" width="162" height="54"></a>
+      <p class="note"><strong>Gratis</strong> para iPhone y Mac.<br>Pro es un pago único.</p>
+    </div>
+    <div class="devices">
+      <div class="window"><img src="../assets/mac-hero.jpg" alt="Takeframe en una Mac: la imagen en vivo del iPhone con los controles de la cámara a la derecha" width="1372" height="868"></div>
+      <div class="phone"><img src="../assets/iphone.jpg" alt="Takeframe en el iPhone, conectado a la Mac" width="1400" height="646"></div>
+    </div>
+    <ul class="specs">
+      <li>4K · HDR</li>
+      <li>ProRes · Apple Log</li>
+      <li>Preview en vivo de ~50 ms</li>
+      <li>Micrófono de la Mac sincronizado</li>
+      <li>Cifrada, sin nube</li>
+    </ul>
   </div>
 </section>
+
+<section id="como">
+  <div class="wrap">
+    <div class="intro center">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2>Tres pasos, sin cables entre ellos</h2>
+      <p>Takeframe son dos apps que trabajan juntas: la cámara en tu iPhone y la sala de control en tu Mac.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Prepará tu iPhone</h3><p>Ponelo en un trípode, enchufalo y abrí Takeframe. Se empareja con tu Mac una sola vez, con un código de seis dígitos.</p></li>
+      <li><h3>Encuadrá desde tu escritorio</h3><p>Tu Mac muestra la imagen en vivo con unos 50 ms de demora. Cambiá lente, zoom, foco y exposición sin levantarte.</p></li>
+      <li><h3>Grabá</h3><p>El iPhone graba la toma con la máxima calidad. Cuando cortás, se copia a tu Mac con el micrófono de la Mac sincronizado.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="por-que">
+  <div class="wrap">
+    <div class="intro center">
+      <span class="eyebrow">No es una webcam</span>
+      <h2>Te quedás con el archivo original, no con un stream</h2>
+      <p>Las apps de webcam mandan el video a tu Mac a medida que pasa, así que lo que grabás es tan bueno como esa transmisión. Takeframe graba en el propio iPhone y copia el archivo original a tu Mac cuando cortás. El preview en vivo es solo para mirar: si el Wi-Fi falla, tu toma no.</p>
+    </div>
+    <div class="versus">
+      <div>
+        <h3>Apps de webcam</h3>
+        <ul>
+          <li>Graban la transmisión en vivo</li>
+          <li>Calidad limitada por la conexión</li>
+          <li>Un cuadro perdido queda en tu video</li>
+          <li>El audio se sincroniza a mano, si se puede</li>
+        </ul>
+      </div>
+      <div class="ours">
+        <h3>Takeframe</h3>
+        <ul>
+          <li>Graba el archivo original en el iPhone</li>
+          <li>4K, HDR, ProRes y Apple Log</li>
+          <li>Los cortes de red nunca llegan a la toma</li>
+          <li>El micrófono de tu Mac, sincronizado por sonido</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funciones">
+  <div class="wrap">
+    <div class="row">
+      <div class="text">
+        <span class="eyebrow">Monitor pro</span>
+        <h2>Mirá exactamente lo que grabás</h2>
+        <p>Focus peaking, cebras e histograma en vivo sobre la imagen<span class="tag">PRO</span>, más una cuadrícula de tercios y un nivel de horizonte para que cada plano quede derecho.</p>
+        <p>Hacé click en cualquier parte del preview para enfocar y exponer ahí.</p>
+      </div>
+      <div class="window"><img src="../assets/mac-monitor.jpg" alt="Focus peaking en verde e histograma sobre la imagen en vivo" width="1064" height="604" loading="lazy"></div>
+    </div>
+    <div class="row flip">
+      <div class="text">
+        <span class="eyebrow">Controles manuales</span>
+        <h2>Cada control, a un click</h2>
+        <p>Lente, zoom, linterna, cuadros por segundo y estabilización, más foco, ISO, obturación y balance de blancos manuales<span class="tag">PRO</span>, todo desde tu escritorio.</p>
+        <p>Guardá toda la configuración como una escena y volvé a ella con un click.</p>
+      </div>
+      <div class="window"><img src="../assets/mac-controls.jpg" alt="Foco, ISO, obturación y balance de blancos manuales en Takeframe para Mac" width="872" height="640" loading="lazy"></div>
+    </div>
+    <div class="row">
+      <div class="text">
+        <span class="eyebrow">Sonido sincronizado</span>
+        <h2>Grabá. El audio ya está sincronizado.</h2>
+        <p>Takeframe graba el micrófono de tu Mac en 24 bits mientras el iPhone filma, y los alinea por sonido, al milisegundo. Sin claqueta y sin sincronizar en la edición.</p>
+        <p>Una cuenta regresiva te prepara antes de cada toma, y con los marcadores señalás momentos mientras grabás.</p>
+      </div>
+      <div class="window"><img src="../assets/mac-recording.jpg" alt="Takeframe para Mac mientras graba, con el nivel del micrófono y un marcador" width="1240" height="660" loading="lazy"></div>
+    </div>
+    <div class="row flip">
+      <div class="text">
+        <span class="eyebrow">Tus tomas</span>
+        <h2>Ya en tu Mac cuando cortás</h2>
+        <p>Cada toma se copia completa a Películas › Takeframe con el audio unido y el .wav original al lado. Tus marcadores se guardan como capítulos de YouTube.</p>
+        <p>Después se borra del iPhone para dejar espacio para la siguiente.</p>
+      </div>
+      <div class="files" role="img" aria-label="La carpeta de Takeframe en la Mac con el video de una toma, el audio del micrófono y sus capítulos">
+        <div class="files-bar"><span class="lights"><i></i><i></i><i></i></span>Películas › Takeframe</div>
+        <ul>
+          <li><span class="ficon mov">MOV</span><span class="fname">Toma 2026-10-17 18.09.18.mov</span><span class="fkind">Video con el audio de tu Mac, sincronizado</span></li>
+          <li><span class="ficon wav">WAV</span><span class="fname">Toma 2026-10-17 18.09.18.wav</span><span class="fkind">La grabación original del micrófono, 24 bits</span></li>
+          <li><span class="ficon txt">TXT</span><span class="fname">Toma 2026-10-17 18.09.18 - capítulos.txt</span><span class="fkind">Tus marcadores, listos para YouTube</span></li>
+        </ul>
+        <pre class="chapters">00:00 Inicio
+01:12 Marcador 1
+03:40 Marcador 2</pre>
+        <p class="files-status">Lista · liberada del iPhone</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mas">
+  <div class="wrap">
+    <div class="intro center">
+      <span class="eyebrow">Y mucho más</span>
+      <h2>Todo lo que rodea a la toma</h2>
+    </div>
+    <div class="grid">
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10M4 18h7"/></svg>
+        <h3>Teleprompter</h3>
+        <p>Tu guion en la pantalla de la Mac. Arranca y se detiene con la grabación.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>
+        <h3>Cuenta regresiva</h3>
+        <p>3, 2, 1 y estás grabando. Elegí los segundos que necesites.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>
+        <h3>Marcadores</h3>
+        <p>Marcá momentos mientras grabás. Se guardan como capítulos de YouTube.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+        <h3>Cuadrícula y nivel</h3>
+        <p>Cuadrícula de tercios y nivel de horizonte, sobre el preview.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5ZM3 13l9 5 9-5"/></svg>
+        <h3>Escenas <span class="tag">PRO</span></h3>
+        <p>Lente, formato, foco, exposición y color, guardados y de vuelta con un click.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <h3>Privada</h3>
+        <p>Emparejada con un código de un solo uso y cifrada de punta a punta. Sin cuentas, sin nube, sin rastreo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pro" class="pricing">
+  <div class="wrap">
+    <div class="intro center">
+      <span class="eyebrow">Precios</span>
+      <h2>Empezá gratis. Pro, una vez y para siempre.</h2>
+      <p>Sin suscripción. Una sola compra desbloquea Pro en tu iPhone y en tu Mac.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Takeframe</h3>
+        <p class="price">Gratis</p>
+        <p class="sub">Todo lo que necesitás para empezar a grabar.</p>
+        <ul>
+          <li>Grabación en 1080p con foco y exposición automáticos</li>
+          <li>Preview en vivo y control remoto desde tu Mac</li>
+          <li>El micrófono de tu Mac, sincronizado por sonido</li>
+          <li>Teleprompter, marcadores y cuenta regresiva</li>
+          <li>Cuadrícula y nivel de horizonte</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>Takeframe Pro</h3>
+        <p class="price">USD 19,99 <small>pago único</small></p>
+        <p class="sub">Todo lo de la versión gratis, y además:</p>
+        <ul>
+          <li>4K, HDR, ProRes y Apple Log</li>
+          <li>Foco, ISO, obturación y balance de blancos manuales</li>
+          <li>Monitor pro: histograma, cebras y focus peaking</li>
+          <li>Escenas: tus configuraciones, de vuelta con un click</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fineprint">Precio en dólares estadounidenses; el App Store te lo muestra en tu moneda. ProRes y Apple Log requieren un iPhone Pro.</p>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap">
+    <div class="intro center">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Qué necesito para usar Takeframe?</summary><p>Un iPhone con iOS 17 o posterior y una Mac con macOS 15 o posterior, con Takeframe abierta en los dos y el Wi-Fi activado. Funciona mejor si están en la misma red. ProRes y Apple Log requieren un iPhone Pro.</p></details>
+      <details><summary>¿Takeframe es una app de webcam?</summary><p>No. Takeframe está hecha para grabar: cada toma se graba en el iPhone con la máxima calidad y después se copia a tu Mac. No aparece como cámara en apps de videollamadas ni de streaming.</p></details>
+      <details><summary>¿Necesito Takeframe Pro?</summary><p>No. La versión gratis graba en 1080p con foco, exposición y balance de blancos automáticos, e incluye el preview en vivo, la sincronía por sonido, el teleprompter, los marcadores, la cuenta regresiva, la cuadrícula y el nivel. Pro suma 4K, HDR, ProRes y Apple Log, controles manuales, las herramientas del monitor pro y las escenas.</p></details>
+      <details><summary>¿Takeframe Pro es una suscripción?</summary><p>No. Takeframe Pro es una compra única que funciona en tu iPhone y en tu Mac con la misma cuenta de Apple. Podés restaurarla cuando quieras desde la pantalla de compra.</p></details>
+      <details><summary>¿Qué pasa si se corta el Wi-Fi mientras grabo?</summary><p>La toma se graba en el iPhone, así que sigue: solo se pausa el preview en vivo. Cuando tu Mac se vuelve a conectar, las tomas terminadas se copian.</p></details>
+      <details><summary>¿Takeframe necesita internet o una cuenta?</summary><p>No. Tu iPhone y tu Mac se comunican directamente por tu red local, con cifrado de punta a punta. No hay cuentas, ni servidores, ni rastreo.</p></details>
+      <details><summary>¿Cuánto espacio necesito en el iPhone?</summary><p>Cada toma se graba completa en el iPhone antes de pasar a tu Mac: unos 750 MB por minuto en 4K a 30 fps en HEVC. La app te muestra cuántos minutos te quedan, y cada toma se borra del iPhone cuando ya está a salvo en tu Mac.</p></details>
+      <details><summary>¿Dónde se guardan mis tomas?</summary><p>En Películas › Takeframe, en tu Mac: un archivo .mov con el audio ya unido, el .wav original del micrófono y, si agregaste marcadores, un archivo de texto con ellos como capítulos de YouTube.</p></details>
+    </div>
+    <p class="fineprint">¿Otra duda? Mirá <a href="soporte.html">Soporte</a> o escribinos a <a href="mailto:martinpoblet.dev@gmail.com">martinpoblet.dev@gmail.com</a>.</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>Tu mejor cámara ya está en tu bolsillo.</h2>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/id6824066436"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-mx?size=250x83" alt="Descárgalo en el App Store" width="162" height="54" loading="lazy"></a>
+      <p class="note"><strong>Gratis</strong> para iPhone y Mac.<br>Pro es un pago único.</p>
+    </div>
+  </div>
+</section>
+
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span>© 2026 · Takeframe para iPhone y Mac.</span>
+    <span>© 2026 Martin Poblet · Takeframe para iPhone y Mac. <span class="credit">Tipografía Satoshi, de Indian Type Foundry.</span></span>
     <nav>
       <a href="privacidad.html">Privacidad</a>
       <a href="soporte.html">Soporte</a>

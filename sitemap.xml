@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/"/>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/"/>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/soporte.html"/>
+  </url>
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/es/soporte.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/soporte.html"/>
+  </url>
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://martpoblet.github.io/takeframe/es/privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://martpoblet.github.io/takeframe/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://martpoblet.github.io/takeframe/es/privacidad.html"/>
+  </url>
+</urlset>
